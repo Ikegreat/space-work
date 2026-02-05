@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+@font-face {
+    font-family:Great1 ;
+    src: url(/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: Great2;
+    src: url(/fonts/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: Great3;
+    src: url(/fonts/Barlow-Light.ttf);
+}
+body {
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Great1;
+    padding: 30px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;   
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    button {
+        border: 0px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+        #openMenu {
+            width: 30px;
+            margin-bottom: 10px;       
+        }
+    }
+}
+#header-tablet {
+    display: none;
+}
+#parentMenu {
+    
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 60%;
+     z-index: 1000;
+     display: none;
+     height: 100vh;
+     display: none;
+}
+#parentMenu.active {
+    display: block;
+}
+#childMenu {   
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    background:  #0b0d1729; 
+    padding: 20px;
+    backdrop-filter: blur(1.5rem);
+}
+#closeMenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 100;
+    display: block;
+}
+#closeBtn {
+    position: fixed;
+    right: 50px;
+}
+#childMenu ul {
+    list-style-type: none;
+    margin-top: 120px;
+    cursor: pointer;
+    font-family: Great3;
+    font-weight: 400;
+    li {
+        font-size: 20px;
+        padding: 10px;   
+    }
+    span {
+        padding: 0px 10px;
+        font-family: Great1;
+        color: rgba(255, 255, 255, 1);
+    } 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+} 
+main {
+    text-align: center;
+     h2 {
+        font-family: Great3;
+        margin-bottom: 25px;
+        font-weight: 100;
+     }
+     #space-txt {
+        font-family: Great2;
+        font-size: 70px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        font-weight: 300;
+     }
+     h4 {
+        font-family: Great3;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 20px;
+        margin-bottom: 60px;
+     } 
+}
+.anchor-tag {
+    background-color: white;
+    border-radius: 999px;
+    height: 200px;
+    width: 200px;
+   margin: 0px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   a {
+    text-decoration: none;
+    color: blueviolet;
+    
+   }
+   h1 {
+    font-family: Great2;
+    letter-spacing: 5px;
+   }
+}
+@media (min-width:768px) {
+    body {
+        background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header-tablet {
+        display: block;
+        /* background-color: #0b0d1729; */
+        /* background-color:rgba(0, 0, 0, 0.358); */
+        background-color: rgba(255, 255, 255, 0.107);
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 40px;
+        a {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        span {
+            display: none;
+        }
+     ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+     }
+     li {
+        color: white;
+        font-size: 20px;
+     }
+    }
+    #openBtn {
+        display: none;
+    }
+    #closeBtn {
+        display: none;
+    }
+    main {
+        margin-bottom: 220px;
+        h2 {
+            font-size: 30px;
+            word-spacing: 5px;
+        }
+        #space-txt {
+            font-size: 120px;
+            margin-bottom: 50px;
+        }
+        h4 {
+            font-size: 28px;
+            line-height: 37px;
+            margin-bottom: 60px;
+        }
+    }
+    .anchor-tag {
+        height: 300px;
+        width: 300px;
+        h1{
+            font-size: 50px;
+            font-weight: 100;
+        }
+    }
+}
+@media (min-width:1028px) {
+    body {
+        background-image: url(assets/home/background-home-desktop.jpg);
+    }
+    span {
+        display: block;
+    }
+    #header-tablet {
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.171);
+        backdrop-filter: blur(1.5rem);   
+        
+    }}
