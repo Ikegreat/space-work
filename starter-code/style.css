@@ -188,7 +188,7 @@ main {
     #closeBtn {
         display: none;
     }
-    main {
+    main { 
         margin-bottom: 220px;
         h2 {
             font-size: 30px;
@@ -265,6 +265,7 @@ main {
         align-items: flex-end;
         justify-content: space-between;
         gap: 20px;
+        padding: 0px 50px;
 
     }
     .main-texts {
