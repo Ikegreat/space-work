@@ -106,15 +106,28 @@ header {
     }
 }
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   text-align: center;
 }
 .image-container {
      text-align: center;
         display: block; 
+        margin-bottom: 15px;
     img {
-        width: 40%;
+        width: 60%;
         
     }
+}
+.main-text-container {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+    
 }
