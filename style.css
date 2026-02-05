@@ -48,7 +48,6 @@ header {
     display: none;
 }
 #parentMenu {
-    
      position: fixed;
      top: 0;
      right: 0;
@@ -70,13 +69,13 @@ header {
     backdrop-filter: blur(1.5rem);
 }
 #closeMenu {
-    background: none;
+    /* background: none;
     border: none;
     cursor: pointer;
     padding: 20px;
     font-size: 22px;
     font-weight: 100;
-    display: block;
+    display: block; */
 }
 #closeBtn {
     position: fixed;

@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:Great1 ;
+    src: url(/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: Great2;
+    src: url(/fonts/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: Great3;
+    src: url(/fonts/Barlow-Light.ttf);
+}
+body {
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    padding: 30px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    
+    #closeBtn {
+        background-color: transparent;
+        border: 0px;
+        cursor: pointer;
+    }
+    #openBtn {
+        background-color: transparent;
+        border: 0px;
+        cursor: pointer;
+        margin-bottom: 20px;
+       
+    }
+    img {
+        width: 30px;
+    }
+}
+#parentMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 999;
+    height: 100vh;
+    backdrop-filter:blur(1.5rem) ;
+    width: 60%;
+    display: none;
+}
+#parentMenu.active {
+    display: block;
+}
+#childMenu {
+   
+    background-color:re #0b0d1729;
+    backdrop-filter: blur(1.5px);
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    padding: 20px;
+    img {
+        position: fixed;
+        right: 35px;
+        top: 50px;
+    }
+    ul {
+        margin-top: 130px;
+    }
+    a {
+        list-style-type: none;
+        text-decoration: none; 
+    }
+    li {
+        color: white;
+        font-family: Great3;
+        padding: 20px;
+        font-size: 20px; 
+    }
+    span {
+        padding: 15px;
+        font-family: Great1;
+    }
+}
