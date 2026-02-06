@@ -102,6 +102,7 @@ header {
     }
 } 
 main {
+    margin-bottom: 50px;
     text-align: center;
      h2 {
         font-family: Great3;
