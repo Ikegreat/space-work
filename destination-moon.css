@@ -160,16 +160,21 @@ main {
         letter-spacing: 2px;
         font-family: Great2;
         margin-bottom: 20px;
+        text-align: center;
     }
     h4 {
         font-family: Great3;
         text-align: center;
+        margin: 0px auto;
         line-height: 25px;
     }
     .border {
         border: 1px solid white;
         margin-top: 40px;
         margin-bottom: 30px;
+    }
+    .p-text {
+        display: none;
     }
 }
 .grid1 {
@@ -196,9 +201,16 @@ main {
     h3 {
         margin-bottom: 10px;
     }
-   
+    
+        
+}
+#paragraph {
+ display: none;
 }
 @media(min-width:768px) {
+    #paragraph {
+        display: none;
+    }
     .right-header {
         display: none;
     }
@@ -267,8 +279,12 @@ main {
             .desktop-header {
                 display: none;
             }
+            
 }
 @media (min-width:1024px) {
+    #paragraph {
+        display: block;
+    }
     .tablet-header {
         display: none;
     }
@@ -293,33 +309,46 @@ main {
             
         }
     }
-    /* main {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 10px;
-     
+    main {
+        /* display:flex ;
+        align-items: center;
+        gap: 20px;
+        text-align: left; */
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px 80px;
+    }
+    h4 {
+        display: none;
     }
     .image-container {
         img {
-            width: 100%;
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 90px;
+            position: relative;
+            left: 160px;
         }
     }
     .main-text-container {
-     margin: 0 50px;
-     h4 {
-        text-align: center;
-        position:relative;
-        left: 70px;
-     
-     }
-    
+      display: grid;
+
     }
-    .border {
+    p {
+        text-align: left;
+        /* padding: 0 90px; */
+        width: 60%;
+        margin: 0 220px;
+        font-family: Great3;
+}
+.border {
+    width: 55%;
     position: relative;
-    widthq: 50%;
-    left: 70px;
-    }
-    */
-   
+    left: 40px;
+    margin: 0px auto;
+}
+.grid-container {
+    width: 70%;
+    margin: 0 auto;
+}
 }
