@@ -294,19 +294,25 @@ main {
         display: block;
         background-color: rgba(191, 185, 185, 0.062);
             backdrop-filter: blur(1.5rem);
+            
             padding: 20px;
         a {
             color: white;
             font-family: Great3;
-            font-size: 22px;
+            font-size: 18px;
             text-decoration: none;
             list-style: none;
+            font-weight: 300;
         }
         ul {
            
             display: flex;
             gap: 50px;
             
+        }
+        span {
+            padding: 0 5px;
+            font-family: Great1;
         }
     }
     main {
