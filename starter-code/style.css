@@ -3,19 +3,7 @@
     margin: 0;
     scroll-behavior: smooth;
 
-}
-@font-face {
-    font-family:Great1 ;
-    src: url(/fonts/Barlow-Regular.ttf);
-}
-@font-face {
-    font-family: Great2;
-    src: url(/fonts/Bellefair-Regular.ttf);
-}
-@font-face {
-    font-family: Great3;
-    src: url(/fonts/Barlow-Light.ttf);
-}
+}c
 body {
     background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
     background-size: cover;
@@ -189,6 +177,7 @@ main {
         display: none;
     }
     main { 
+        
         margin-bottom: 220px;
         h2 {
             font-size: 30px;
@@ -267,13 +256,18 @@ main {
         gap: 20px;
         padding: 0px 50px;
         margin-bottom: 300px;
+       
+    
 
     }
     .main-texts {
         text-align: left;
+        
+        
     }
     h4 {
         width: 70%;
+
     }
     .anchor-tag {
         height: 250px;
